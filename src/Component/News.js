@@ -167,7 +167,7 @@ export class News extends Component {
             
                 {!this.state.loading && this.state.article.map((element)=>{
                     return <div className='col-md-3' key = {element.url}>
-                    <NewsItems title = {element.title ? element.title : ""} description = {element.description ? element.description : "click to read more"} imageURL = {element.urlToImage ?element.urlToImage:"https://i0.wp.com/9to5toys.com/wp-content/uploads/sites/5/2025/07/Prime-Day-deals-sneak-peek.jpg?resize=1200%2C628&ssl=1" } url = {element.url}/> 
+                    <NewsItems title = {element.title ? element.title : ""} description = {element.description ? element.description : "click to read more"} imageURL = {element.urlToImage ?element.urlToImage:"https://i0.wp.com/9to5toys.com/wp-content/uploads/sites/5/2025/07/Prime-Day-deals-sneak-peek.jpg?resize=1200%2C628&ssl=1" } url = {element.url} author = {element.author} publish = {element.publishedAt}/> 
                     </div>
                 })}
          </div>

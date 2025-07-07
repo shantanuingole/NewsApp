@@ -11,12 +11,14 @@ import {
 export default class App extends Component {
   render() {
     return (
-      <Router>
+      <Router basename='NewsApp'>
+
       <div>
       <Navbar/>
        
          <Routes>
           <Route path="/" element={<News key="general" pageSize={8} category="general" />} />
+          <Route path="/general" element={<News key="general1" pageSize={8} category="general" />} />
             <Route exact path="/business" element={<News key="business" pageSize={8} category="business" />} />
             <Route exact path="/entertainment" element={<News key="entertainment" pageSize={8} category="entertainment" />} />
             <Route exact path="/health" element={<News key="health" pageSize={8} category="health" />} />
